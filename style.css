@@ -11,7 +11,7 @@ body {
   align-items: center;
   height: 100vh;
   overflow: hidden;
-  user-select: none; /* Blokujemy zaznaczanie tekstu */
+  user-select: none; 
 }
 
 .background-video {
@@ -43,7 +43,7 @@ body {
   text-shadow: 0 0 10px white;
   cursor: pointer;
   transition: text-shadow 0.3s ease-in-out, transform 0.2s;
-  text-decoration: none; /* Usuwamy podkreślenie z linków */
+  text-decoration: none; 
 }
 
 .glow-btn:hover {
@@ -75,7 +75,7 @@ body {
   transform: scale(1.2);
 }
 
-/* Estetyczny Popup GUI */
+
 .popup {
   position: fixed;
   top: 50%;
@@ -87,10 +87,10 @@ body {
   border-radius: 20px;
   text-align: center;
   z-index: 2;
-  display: none; /* Ukrywamy popup na początku */
+  display: none; 
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
   animation: fadeIn 0.5s ease-out;
-  font-family: 'Minecraft', sans-serif; /* Zastosowanie czcionki Minecraft */
+  font-family: 'Minecraft', sans-serif;
 }
 
 .popup-content {
