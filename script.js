@@ -4,22 +4,21 @@ document.addEventListener("DOMContentLoaded", () => {
   const audioYes = document.getElementById("audio-yes");
   const audioNo = document.getElementById("audio-no");
 
-  // Pokaż popup po załadowaniu strony
+  
   popup.style.display = "block";
 
-  // Obsługuje kliknięcie przycisku "Tak"
   audioYes.addEventListener("click", () => {
     audio.play().catch((err) => console.error("Błąd odtwarzania audio:", err));
-    popup.style.display = "none"; // Ukrywamy popup po wyborze
+    popup.style.display = "none"; 
   });
 
-  // Obsługuje kliknięcie przycisku "Nie"
+
   audioNo.addEventListener("click", () => {
-    audio.pause(); // Pauzujemy audio
-    popup.style.display = "none"; // Ukrywamy popup po wyborze
+    audio.pause(); 
+    popup.style.display = "none"; 
   });
 
-  // Zmiana tytułu strony w cyklu
+ 
   const titles = ["x", "x3", "x3z", "x3zn", "x3zny", "x3zn", "x3z", "x3", "x"];
   let titleIndex = 0;
 
@@ -28,5 +27,5 @@ document.addEventListener("DOMContentLoaded", () => {
     titleIndex = (titleIndex + 1) % titles.length;
   }
 
-  setInterval(changeTitle, 500); // Zmieniaj co 500ms
+  setInterval(changeTitle, 500); 
 });
